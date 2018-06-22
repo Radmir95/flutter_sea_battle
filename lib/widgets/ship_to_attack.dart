@@ -203,7 +203,8 @@ class _ShipToAttackState extends State<ShipToAttack> {
       floatingActionButton: FancyButton(onPressed: swipeToNextScreen,),
     );
   }
-  swipeToNextScreen(){
+
+  void swipeToNextScreen(){
     // some logic to update ships on screen
     setState(() {
       if (currentScreen == Screens.EnemyShips){
@@ -222,7 +223,7 @@ class _ShipToAttackState extends State<ShipToAttack> {
 
   }
 
-  attackShip(ShipButton ship) async {
+  void attackShip(ShipButton ship) async {
     var result = await canMakeStep();
     if (result == true) {
       setState(() {
@@ -271,7 +272,7 @@ class _ShipToAttackState extends State<ShipToAttack> {
     }
   }
 
-  newGame(){
+  void newGame(){
     Navigator.push(context, new MaterialPageRoute(builder: (context) {
       return MyApp();
     }));

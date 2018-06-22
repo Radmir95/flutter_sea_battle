@@ -1,6 +1,6 @@
-# sea_buttle_flutter
+# sea_battle_flutter
 
-Flutter application - sea buttle.
+Flutter application - sea battle.
 
 ## Getting Started
 
